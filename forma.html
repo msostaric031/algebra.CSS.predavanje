@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+      }
+
+      input[type="email"],
+      input[type="password"] {
+        width: 100%;
+        margin: 5px 0 22px 0;
+        padding: 15px;
+        border: none;
+        background-color: #f1f1f1;
+        display: inline-block;
+      }
+      input[type="email"]:focus,
+      input[type="password"]:focus {
+        background-color: #ddd;
+        outline: none;
+      }
+      input[type="checkbox"] {
+        margin-right: 8px;
+      }
+      label {
+        font-weight: bold;
+      }
+      button {
+        background-color: #04aa6d;
+        border: none;
+        color: white;
+        margin: 8px 0;
+        width: 100%;
+        opacity: 0.9;
+        padding: 14px 20px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        opacity: 1;
+      }
+
+      .cancel {
+        background-color: #f44336;
+      }
+      .cancel,
+      .login {
+        float: left;
+        width: 50%;
+      }
+      .container {
+        padding: 16px;
+      }
+
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      @media screen and (max-width: 300px) {
+        .cancel,
+        .login {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" style="border: 1px solid #ccc">
+      <div class="container">
+        <h1>Forma za prijavu</h1>
+        <p>Molim unesite podatke u formu za kreiranje novog računa.</p>
+        <hr />
+        <label for="email">Email</label
+        ><input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Unesite Email"
+          required
+        />
+        <label for="password">Lozinka</label
+        ><input
+          type="password"
+          name="pass"
+          id="pass"
+          placeholder="Unesite lozinku"
+          required
+        />
+        <label for="password">Ponovite lozinku</label
+        ><input
+          type="password"
+          name="passR"
+          id="passR"
+          placeholder="Ponovite lozinku"
+          required
+        />
+        <input type="checkbox" name="zapamti" id="zapamti" checked /><label
+          for="checkBox"
+          >Zapamti me</label
+        >
+        <p>
+          Prilikom kreiranja računa pristajete na naše
+          <a href="" style="color: dodgerblue">Uvjete korištenja.</a>
+        </p>
+        <div class="clearfix">
+          <button type="button" class="cancel">Odustani</button
+          ><button type="submit" class="login">Prijava</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
