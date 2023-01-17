@@ -29,29 +29,37 @@
       }
       a:link {
         color: red;
-        background-color: yellow;
       }
       a:visited {
-        color: purple;
+        color: green;
       }
-      a.linkA:visited {
+      a:active {
+        color: blue;
       }
-      .fieldC {
+
+      .cellC {
         background-color: yellow;
       }
-      .fieldC:hover {
+      .cellC:hover {
         background-color: red;
+      }
+      .cell {
+        background-color: yellow;
+      }
+      .cell:hover {
+        background-color: lightgreen;
+        cursor: pointer;
       }
     </style>
   </head>
   <body>
     <table>
       <tr>
-        <td rowspan="4">
+        <td rowspan="4" class="cell">
           <a href="https://www.algebra.hr/" class="linkA">A</a>
         </td>
         <td>B</td>
-        <td colspan="2" class="fieldC">C</td>
+        <td colspan="2" class="cellC">C</td>
       </tr>
       <tr>
         <td colspan="3">D</td>
@@ -61,8 +69,8 @@
         <td rowspan="2">F</td>
       </tr>
       <tr>
-        <td>
-          <a href="https://www.google.com/" class="linkG" target="_blank">G</a>
+        <td class="cell">
+          <a href="https://www.index.hr/" class="linkG" target="_blank">G</a>
         </td>
         <td>H</td>
       </tr>
