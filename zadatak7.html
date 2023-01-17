@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zadatak 7</title>
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0;
+        margin: 0;
+      }
+      table {
+        border: 2px solid blue;
+        border-collapse: collapse;
+        border-spacing: 0px;
+        margin: auto;
+      }
+      td {
+        border: 1px solid blue;
+        text-align: center;
+        padding: 5px 10px;
+        vertical-align: center;
+      }
+      a {
+        text-decoration: none;
+      }
+      a:link {
+        color: red;
+      }
+      a:visited {
+        color: green;
+      }
+      a:active {
+        color: blue;
+      }
+
+      .cellC {
+        background-color: yellow;
+      }
+      .cellC:hover {
+        background-color: red;
+      }
+      .cell {
+        background-color: yellow;
+      }
+      .cell:hover {
+        background-color: lightgreen;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td rowspan="4" class="cell">
+          <a href="https://www.algebra.hr/" class="linkA">A</a>
+        </td>
+        <td>B</td>
+        <td colspan="2" class="cellC">C</td>
+      </tr>
+      <tr>
+        <td colspan="3">D</td>
+      </tr>
+      <tr>
+        <td colspan="2">E</td>
+        <td rowspan="2">F</td>
+      </tr>
+      <tr>
+        <td class="cell">
+          <a href="https://www.google.com/" class="linkG" target="_blank">G</a>
+        </td>
+        <td>H</td>
+      </tr>
+    </table>
+  </body>
+</html>

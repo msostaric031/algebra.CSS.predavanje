@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>zadatak 6</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: azure;
+        height: 100vh;
+      }
+      .kocka {
+        width: 150px;
+        height: 150px;
+        background-color: #f1502f;
+        border-radius: 15px;
+        transform: rotateZ(45deg);
+      }
+      .linija1 {
+        width: 100px;
+        background-color: white;
+        height: 10px;
+        top: 40px;
+        position: absolute;
+      }
+      .linija1::before {
+        content: "";
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: white;
+        position: absolute;
+        top: -9px;
+        left: 30px;
+      }
+      .linija1::after {
+        content: "";
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: white;
+        position: absolute;
+        top: -8px;
+        left: 90px;
+      }
+      .linija2 {
+        width: 90px;
+        background-color: white;
+        height: 10px;
+        top: 70px;
+
+        left: 30px;
+        position: absolute;
+        transform: rotateZ(45deg);
+      }
+      .linija2::before {
+        content: "";
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: white;
+        position: absolute;
+        top: -10px;
+        left: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="kocka">
+      <div class="linija1"></div>
+      <div class="linija2"></div>
+    </div>
+  </body>
+</html>
