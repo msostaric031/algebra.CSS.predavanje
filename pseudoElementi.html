@@ -7,32 +7,28 @@
     <title>Pseudo Elementi</title>
 
     <style>
-      p::first-letter {
+      ::marker {
         color: red;
         font-size: xx-large;
       }
-      p::first-line {
-        color: blue;
-        background-color: yellow;
-        font-variant: small-caps;
+      .geek1 {
+        list-style-type: circle;
+      }
+      .geek2 {
+        list-style-type: lower-roman;
       }
     </style>
   </head>
   <body>
-    <h1>::first-line selektor</h1>
-    <h2>Cilj zadatka je obojati prvu liniju teksta</h2>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
-      laudantium accusantium dolor porro unde sunt vel similique nemo itaque
-      ipsa a aperiam rerum tempore ut tempora quibusdam aspernatur voluptatum
-      accusamus magni debitis aliquam? Nihil deserunt architecto eius quia
-      quibusdam, neque saepe earum temporibus, omnis est aut. Culpa accusantium
-      fugiat illo, saepe voluptate inventore. Atque modi sapiente, doloremque
-      enim similique eaque distinctio natus error nemo fugit repudiandae omnis
-      nesciunt ducimus? Aliquam, quo. Dolore itaque dicta ad dolorem distinctio
-      necessitatibus id, aliquid maiores officia fugit harum ducimus assumenda
-      optio corrupti laudantium omnis dolores quibusdam. Earum in
-      exercitationem, impedit itaque cum quasi deleniti.
-    </p>
+    <ul class="geek1">
+      <li>Kava</li>
+      <li>Čaj</li>
+      <li>Mlijeko</li>
+    </ul>
+    <ol class="geek2">
+      <li>Kava</li>
+      <li>Čaj</li>
+      <li>Mlijeko</li>
+    </ol>
   </body>
 </html>
