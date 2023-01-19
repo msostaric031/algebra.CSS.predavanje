@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zadatak 1 (pseudo)</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      hr {
+        border: 2px solid red;
+        border-style: dotted;
+      }
+      section {
+        border: 2px solid #f1f1f1;
+      }
+      ::marker {
+        color: red;
+      }
+      .tocan::after {
+        content: " ✔";
+      }
+      ol.lista1 {
+        list-style-type: upper-latin;
+      }
+      ol.lista2 {
+        list-style-type: lower-latin;
+      }
+
+      p::first-letter {
+        font-size: xx-large;
+        color: blue;
+      }
+      ul {
+        color: red;
+      }
+      a:visited {
+        color: magenta;
+      }
+      .section3 {
+        list-style-type: lower-latin;
+      }
+      .lista3 {
+        list-style-type: "\2023";
+      }
+      a:hover {
+        background-color: lightgreen;
+        color: yellow;
+      }
+      a:active {
+        color: lightgreen;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="section1">
+      <p>1 Koji je glavni grad hrvatske?</p>
+      <ol class="lista1">
+        <li>Koprivnica</li>
+        <li>Osijek</li>
+        <li class="tocan">Zagreb</li>
+        <li>Rijeka</li>
+      </ol>
+    </section>
+    <hr />
+    <section>
+      <p>2 Koja je rijeka koja protječe kroz Hrvatsku najduža?</p>
+      <ol class="lista2">
+        <li>Mura</li>
+        <li class="tocan">Sava</li>
+        <li>Drava</li>
+        <li>Dunav</li>
+      </ol>
+    </section>
+    <hr />
+    <section>
+      <p>3 Pogledajte sljedeće video linkove</p>
+      <ul class="lista3">
+        <li>
+          <a href="https://www.index.hr/" target="_blank">Play bass guitar</a>
+        </li>
+        <li><a href="https://www.links.hr/">Stop eating sugar</a></li>
+        <li>Treći</li>
+        <li>Četvrti</li>
+        <li>Peti</li>
+      </ul>
+    </section>
+    <hr />
+  </body>
+</html>
