@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Elementi</title>
+
+    <style>
+      p::before {
+        content: "Zapamti ovo -> ";
+        color: red;
+        background-color: yellow;
+      }
+
+      h1::first-letter,
+      p::first-letter {
+        font-size: 32px;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Demo za ::before selektor</h1>
+    <p>Moje ime je pero</p>
+    <p>Živim u Osijeku</p>
+
+    <h1>Demo za ::first-letter selektor</h1>
+    <p>Prvi tekst</p>
+    <p>Drugi tekst</p>
+    <p>Treći tekst</p>
+    <p>Četvrti tekst</p>
+  </body>
+</html>
