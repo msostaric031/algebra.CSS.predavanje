@@ -43,7 +43,10 @@
         list-style-type: lower-latin;
       }
       .lista3 {
-        list-style-type: "\2023";
+        list-style: none;
+      }
+      .lista3 li::before {
+        content: "\2023";
       }
       a:hover {
         background-color: lightgreen;
