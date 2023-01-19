@@ -36,17 +36,21 @@
       ul {
         color: red;
       }
-      a:visited {
-        color: magenta;
-      }
+
       .section3 {
         list-style-type: lower-latin;
       }
       .lista3 {
         list-style: none;
       }
+      /* .lista3{
+          list-style-type: "\2023";
+      } */
       .lista3 li::before {
         content: "\2023";
+      }
+      a:visited {
+        color: magenta;
       }
       a:hover {
         background-color: lightgreen;
