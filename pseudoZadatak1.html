@@ -10,11 +10,10 @@
         font-family: Arial, Helvetica, sans-serif;
       }
       hr {
-        border: 2px solid red;
-        border-style: dotted;
+        border: 2px dotted red;
       }
       section {
-        border: 2px solid #f1f1f1;
+        border: 2px solid gray;
       }
       ::marker {
         color: red;
@@ -36,14 +35,18 @@
       ul {
         color: red;
       }
+
+      .lista3 {
+        list-style: none;
+      }
+      /* .lista3{
+          list-style-type: "\2023";
+      } */
+      .lista3 li::before {
+        content: "\2023";
+      }
       a:visited {
         color: magenta;
-      }
-      .section3 {
-        list-style-type: lower-latin;
-      }
-      .lista3 {
-        list-style-type: "\2023";
       }
       a:hover {
         background-color: lightgreen;
@@ -52,6 +55,9 @@
       a:active {
         color: lightgreen;
         background-color: yellow;
+      }
+      ul li {
+        text-decoration: underline;
       }
     </style>
   </head>
