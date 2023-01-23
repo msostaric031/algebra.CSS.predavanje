@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zadatak 12</title>
+    <style>
+      /* Verzija predavača */
+      html,
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        overflow-x: hidden;
+      }
+      body {
+        background: #ccc;
+      }
+
+      section {
+        box-sizing: border-box;
+        margin: 0 auto;
+        width: 25rem;
+        padding: 30px;
+        padding-bottom: 60px;
+        background-color: white;
+      }
+
+      .full-width {
+        position: relative; /*obavezno*/
+        margin: 0 -30px;
+        background: black;
+        color: white;
+        font-size: 1.125rem;
+        text-align: center;
+      }
+      .full-width:before,
+      .full-width:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 960px;
+        right: 100%;
+        background: red;
+      }
+      .full-width:after {
+        left: 100%;
+        background: green;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h2 class="full-width">Traka pune širine s pseudo elementima</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur
+        alias ad nisi veniam in magni voluptate et enim possimus omnis, a sed
+        cum eveniet dolores corporis praesentium temporibus harum. Beatae.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur
+        alias ad nisi veniam in magni voluptate et enim possimus omnis, a sed
+        cum eveniet dolores corporis praesentium temporibus harum. Beatae.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur
+        alias ad nisi veniam in magni voluptate et enim possimus omnis, a sed
+        cum eveniet dolores corporis praesentium temporibus harum. Beatae.
+      </p>
+    </section>
+  </body>
+</html>
