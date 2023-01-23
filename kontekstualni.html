@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      div p {
+        text-decoration: underline;
+      }
+      .naznaka p {
+        color: red;
+      }
+      .naznaka .text {
+        background-color: yellow;
+        font-style: italic;
+      }
+
+      /* ----- */
+
+      div > span {
+        color: red;
+        border-bottom: 2px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="naznaka">
+      <p class="text">Paragraf unutar diva</p>
+    </div>
+    <hr />
+    <div>
+      <span>Prvi span unutar div elementa </span>
+      <p>
+        <span>Drugi span unutar paragraf elementa</span>
+      </p>
+      <span>Drugi span unutar div elementa</span>
+    </div>
+  </body>
+</html>
