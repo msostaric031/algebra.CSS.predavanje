@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zadatak 12</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        background-color: lightgrey;
+        overflow: hidden;
+      }
+      h2 {
+        background-color: black;
+        color: white;
+        text-align: center;
+      }
+      h2::before {
+        content: "";
+        background-color: green;
+        position: absolute;
+        width: 100%;
+        height: 27px;
+        z-index: -1;
+      }
+      h2::after {
+        content: "";
+        background-color: red;
+        position: absolute;
+        width: 100%;
+        height: 27px;
+        right: 50%;
+        z-index: -1;
+      }
+      section {
+        width: 600px;
+        background-color: white;
+        margin: 10px 0 20px 0;
+      }
+      p {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h2>Traka pune širine s pseudo elementima</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur
+        alias ad nisi veniam in magni voluptate et enim possimus omnis, a sed
+        cum eveniet dolores corporis praesentium temporibus harum. Beatae.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur
+        alias ad nisi veniam in magni voluptate et enim possimus omnis, a sed
+        cum eveniet dolores corporis praesentium temporibus harum. Beatae.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur
+        alias ad nisi veniam in magni voluptate et enim possimus omnis, a sed
+        cum eveniet dolores corporis praesentium temporibus harum. Beatae.
+      </p>
+    </section>
+  </body>
+</html>
