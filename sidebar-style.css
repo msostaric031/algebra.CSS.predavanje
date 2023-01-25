@@ -1,0 +1,57 @@
+@import url("https://netdna-bootstrapcdn.com/font-awesome/4.0.3./css/font-awesome.com");
+
+.menu-wrapper {
+  display: flex;
+  min-height: 100%;
+}
+.sidebar {
+  transform: translate3d(-260px, 0px, 0px);
+  position: absolute;
+  width: 260px;
+  color: #eee;
+  left: 0;
+  height: 100%;
+  transition: all 0.3s;
+}
+
+input[data-function*="swipe"] {
+  position: relative;
+  opacity: 0;
+}
+label[data-function*="swipe"] {
+  position: relative;
+  top: 40px;
+  left: 10px;
+  z-index: 1;
+  display: block;
+  width: 42px;
+  height: 42px;
+  font: 42px/42px fontawesome;
+  text-align: center;
+  color: #2652cc;
+  cursor: pointer;
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.3s;
+}
+input[data-function*="swipe"]:checked ~ label[data-function*="swipe"] {
+  transform: translate3d(260px, 0, 0);
+}
+.content {
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.3s;
+  z-index: -1;
+}
+
+input[data-function*="swipe"]:checked ~ .content {
+  transform: translate3d(245px, 0px, px);
+}
+input[data-function*="swipe"]:checked ~ .sidebar {
+  transform: translate3d(0px, 0px, 0px);
+}
+input[data-function*="swipe"]:checked ~ .sidebar .tabs-container {
+  width: 100%;
+}
+
+.tabs-content {
+  margin-left: 60px;
+}
