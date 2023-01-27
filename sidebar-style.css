@@ -1,7 +1,7 @@
-@import url("https://netdna-bootstrapcdn.com/font-awesome/4.0.3./css/font-awesome.com");
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
 
 .menu-wrapper {
-  display: flex;
+  display: block;
   min-height: 100%;
 }
 .sidebar {
@@ -21,7 +21,7 @@ input[data-function*="swipe"] {
 label[data-function*="swipe"] {
   position: relative;
   top: 40px;
-  left: 10px;
+  left: 0px;
   z-index: 1;
   display: block;
   width: 42px;
@@ -43,7 +43,7 @@ input[data-function*="swipe"]:checked ~ label[data-function*="swipe"] {
 }
 
 input[data-function*="swipe"]:checked ~ .content {
-  transform: translate3d(245px, 0px, px);
+  transform: translate3d(245px, 0px, 0px);
 }
 input[data-function*="swipe"]:checked ~ .sidebar {
   transform: translate3d(0px, 0px, 0px);
