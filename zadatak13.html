@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zadatak 13</title>
     <link rel="stylesheet" href="./zadatak13.css" />
+    <link rel="stylesheet" href="./sidebar-style.css" />
   </head>
   <body>
     <header class="Header">
@@ -15,63 +16,134 @@
         </h1>
       </div>
     </header>
+    <div class="menu-wrapper">
+      <input data-function="swipe" type="checkbox" id="swipe" />
+      <label for="swipe" data-function="swipe">&#xf0c9;</label>
+      <div class="sidebar">
+        <section class="tabs-container">
+          <label for="tab1">Priroda</label>
+          <label for="tab2">Cvijeće</label>
+          <label for="tab3">Planina</label>
+          <label for="tab4">Zgrade</label>
+          <label for="tab5">Ceste</label>
+          <label for="tab6">Šume</label>
+          <label for="tab7">Karte</label>
+        </section>
+      </div>
 
-    <div class="content">
-      <section class="tabs-container">
-        <label for="tab1">Priroda</label>
-        <label for="tab2">Cvijeće</label>
-        <label for="tab3">Planina</label>
-        <label for="tab4">Zgrade</label>
-        <label for="tab5">Ceste</label>
-        <label for="tab6">Šume</label>
-      </section>
-      <input type="radio" name="tab" id="tab1" checked />
-      <section class="tab-content">
-        <h2>Priroda</h2>
-        <p>Neki moj tekst koji je povezan s prirodom</p>
-        <img src="./media/cvijece.jpg" alt="slikaPrirode" />
-        <p>Opis koji se odnosi na sliku prirode</p>
-      </section>
-      <input type="radio" name="tab" id="tab2" />
-      <section class="tab-content">
-        <h2>Cvijeće</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, ullam!
-        </p>
-        <img src="./media/cvijece.jpg" alt="cvijece" />
-      </section>
-      <input type="radio" name="tab" id="tab3" />
-      <section class="tab-content">
-        <h2>Planina</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, ullam!
-        </p>
-        <img src="./media/cvijece.jpg" alt="cvijece" />
-      </section>
-      <input type="radio" name="tab" id="tab4" />
-      <section class="tab-content">
-        <h2>Zgrade</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, ullam!
-        </p>
-        <img src="./media/cvijece.jpg" alt="cvijece" />
-      </section>
-      <input type="radio" name="tab" id="tab5" />
-      <section class="tab-content">
-        <h2>Ceste</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, ullam!
-        </p>
-        <img src="./media/cvijece.jpg" alt="cvijece" />
-      </section>
-      <input type="radio" name="tab" id="tab6" />
-      <section class="tab-content">
-        <h2>Šume</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, ullam!
-        </p>
-        <img src="./media/cvijece.jpg" alt="cvijece" />
-      </section>
+      <div class="content">
+        <input type="radio" name="tab" id="tab1" checked />
+        <section class="tab-content">
+          <h2>Priroda</h2>
+          <p>Neki moj tekst koji je povezan s prirodom</p>
+          <img src="./media/cvijece.jpg" alt="slikaPrirode" />
+          <p>Opis koji se odnosi na sliku prirode</p>
+        </section>
+
+        <input type="radio" name="tab" id="tab2" />
+        <section class="tab-content">
+          <h2>Cvijeće</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+            ullam!
+          </p>
+          <img src="./media/cvijece.jpg" alt="cvijece" />
+        </section>
+
+        <input type="radio" name="tab" id="tab3" />
+        <section class="tab-content">
+          <h2>Planina</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+            ullam!
+          </p>
+          <img src="./media/cvijece.jpg" alt="cvijece" />
+        </section>
+        <input type="radio" name="tab" id="tab4" />
+        <section class="tab-content">
+          <h2>Zgrade</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+            ullam!
+          </p>
+          <img src="./media/cvijece.jpg" alt="cvijece" />
+        </section>
+        <input type="radio" name="tab" id="tab5" />
+        <section class="tab-content">
+          <h2>Ceste</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+            ullam!
+          </p>
+          <img src="./media/cvijece.jpg" alt="cvijece" />
+        </section>
+        <input type="radio" name="tab" id="tab6" />
+        <section class="tab-content">
+          <h2>Šume</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+            ullam!
+          </p>
+          <img src="./media/cvijece.jpg" alt="cvijece" />
+        </section>
+        <input type="radio" name="tab" id="tab7" />
+        <section class="tab-content">
+          <div class="container">
+            <div class="card">
+              <div class="face face1">
+                <div class="content">
+                  <img src="./media/cursor-outline.png" alt="cursor icon" />
+                  <h3>Design</h3>
+                </div>
+              </div>
+              <div class="face face2">
+                <div class="content">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Non, excepturi?
+                  </p>
+                  <a href="#">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="face face1">
+                <div class="content">
+                  <img src="./media/bone-outline.png" alt="cursor icon" />
+                  <h3>Design</h3>
+                </div>
+              </div>
+              <div class="face face2">
+                <div class="content">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Non, excepturi?
+                  </p>
+                  <a href="#">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="face face1">
+                <div class="content">
+                  <img src="./media/sound-icon.png" alt="cursor icon" />
+                  <h3>Design</h3>
+                </div>
+              </div>
+              <div class="face face2">
+                <div class="content">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Non, excepturi?
+                  </p>
+                  <a href="#">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
   </body>
 </html>
