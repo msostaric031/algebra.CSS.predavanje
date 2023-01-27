@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box-model</title>
+    <style>
+      body {
+        font-family: "Courier New", Courier, monospace;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f1f1f1;
+      }
+      .title {
+        border: 3px solid black;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0;
+        background-color: white;
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+
+      .content {
+        display: flex;
+      }
+
+      .border {
+        border: 3px solid black;
+        padding: 10px;
+        border-radius: 5px;
+        width: 200px;
+        height: 500px;
+        margin-right: 20px;
+        background-color: white;
+      }
+      .margin {
+        border: 3px solid black;
+        padding: 10px;
+        border-radius: 5px;
+        width: 400px;
+        height: 500px;
+        background-color: white;
+      }
+      .seperator {
+        border: 2px dashed black;
+      }
+      .padding {
+        border: 3px solid black;
+        padding: 10px;
+        border-radius: 5px;
+        width: 300px;
+        height: 500px;
+        background-color: white;
+        margin-right: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Box Model</h1>
+      <br />
+      <div class="content">
+        <div class="padding">
+          <h1>Padding</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et omnis
+            aliquid in quis! Est molestiae in perspiciatis nemo quidem! Unde
+            doloremque minus quasi ipsa corrupti tempora ad expedita quidem ut.
+          </p>
+          <hr />
+          <h2>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam,
+            tenetur.
+          </h2>
+        </div>
+        <div class="border">
+          <h1>Border</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
+            ipsum dolorem assumenda quos tenetur optio. Voluptates alias
+            nesciunt eum esse?
+          </p>
+          <hr />
+          <h3>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Accusantium, similique.
+          </h3>
+          <hr />
+          <h4>Frontend program ©</h4>
+        </div>
+        <div class="margin">
+          <h1>Margin</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis,
+            laudantium. Nesciunt odit dignissimos incidunt illum numquam iure,
+            vero ullam recusandae. Dolor explicabo, necessitatibus architecto
+            quae neque ipsa laborum illo soluta.
+          </p>
+          <hr class="seperator" />
+          <h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+            exercitationem deserunt rem, soluta quis optio!
+          </h3>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
