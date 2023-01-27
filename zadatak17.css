@@ -145,3 +145,10 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   transform: rotate(-135deg);
   margin-top: -9px;
 }
+
+@media screen and (max-width: 300px) {
+  #sidebarMenu {
+    transform: translateY(-1250px);
+    height: 385px;
+  }
+}
