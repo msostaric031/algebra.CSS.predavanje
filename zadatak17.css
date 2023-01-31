@@ -166,7 +166,7 @@ input[name="tab"] {
 .tab-content {
   position: relative;
   background: #eee;
-  width: calc(100% - 120px);
+  width: 100%;
   min-height: 100vh;
   padding: 15px;
   float: left;
