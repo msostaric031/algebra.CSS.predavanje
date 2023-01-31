@@ -16,14 +16,71 @@
       <div class="spinner diagonal part-2"></div>
     </label>
     <div id="sidebarMenu">
-      <ul class="sidebarMenuInner">
-        <li>Marko Šoštarić <span>Frontend Developer</span></li>
-        <li><a href="#1">Company</a></li>
-        <li><a href="#2">Instagram</a></li>
-        <li><a href="#3" target="_blank">Twitter</a></li>
-        <li><a href="#4">YouTube</a></li>
-        <li><a href="#5" target="_blank">LinkedIn</a></li>
-      </ul>
+      <section class="sidebarMenuInner">
+        <label for="name" class="name"
+          >Marko Šoštarić <span>Frontend Developer</span></label
+        >
+        <label for="tab1" class="tab">Company</label>
+        <label for="tab2" class="tab">Instagram</label>
+        <label for="tab3" class="tab">Twitter</label>
+        <label for="tab4" class="tab">YouTube</label>
+        <label for="tab5" class="tab">LinkedIn</label>
+      </section>
+    </div>
+    <div class="content">
+      <input type="radio" name="tab" id="tab1" checked />
+      <section class="tab-content">
+        <h2>Company site</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolores
+          ratione porro veniam facere? Voluptatibus modi harum laudantium veniam
+          deserunt?
+        </p>
+        <img src="./media/company.png" alt="slikaPrirode" />
+        <p>Opis koji se odnosi na sliku prirode</p>
+      </section>
+
+      <input type="radio" name="tab" id="tab2" />
+      <section class="tab-content">
+        <h2>Instagram site</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolores
+          ratione porro veniam facere? Voluptatibus modi harum laudantium veniam
+          deserunt?
+        </p>
+        <img src="./media/instagram.png" alt="cvijece" />
+      </section>
+
+      <input type="radio" name="tab" id="tab3" />
+      <section class="tab-content">
+        <h2>Twitter site</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolores
+          ratione porro veniam facere? Voluptatibus modi harum laudantium veniam
+          deserunt?
+        </p>
+        <img src="./media/twitter.png" alt="cvijece" />
+      </section>
+      <input type="radio" name="tab" id="tab4" />
+      <section class="tab-content">
+        <h2>YouTube site</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolores
+          ratione porro veniam facere? Voluptatibus modi harum laudantium veniam
+          deserunt?
+        </p>
+        <img src="./media/youtube.png" alt="cvijece" />
+      </section>
+      <input type="radio" name="tab" id="tab5" />
+      <section class="tab-content">
+        <h2>LinkedIn site</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolores
+          ratione porro veniam facere? Voluptatibus modi harum laudantium veniam
+          deserunt?
+        </p>
+        <img src="./media/linkedin.png" alt="cvijece" />
+      </section>
     </div>
   </body>
 </html>
