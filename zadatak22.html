@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        text-align: center;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 25% 50%;
+        grid-gap: 1px;
+        height: calc(100vh -10px);
+        text-transform: uppercase;
+        font-family: system-ui;
+      }
+      .grid > * {
+        padding: 1rem;
+        text-align: center;
+      }
+
+      header,
+      footer {
+        grid-column: 1/-1;
+        background: darksalmon;
+      }
+      aside {
+        grid-row: 2/4;
+        background: darkolivegreen;
+      }
+      article {
+        grid-row-start: 3;
+        grid-column-start: 2;
+        background: darkcyan;
+      }
+      nav {
+        grid-row-start: 2;
+        background: darkgoldenrod;
+      }
+      p {
+        text-transform: none;
+      }
+
+      @media all and (max-width: 600px) {
+        aside,
+        article,
+        nav {
+          grid-column: 1/-1;
+        }
+        header {
+          grid-row: 1;
+        }
+        nav {
+          grid-row: 3;
+        }
+        article {
+          grid-row: 4;
+        }
+        footer {
+          grid-row: 5;
+        }
+        aside {
+          grid-row: 2;
+        }
+      } ;
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <header class="page-header">Header</header>
+      <aside>Aside</aside>
+      <nav class="page-main">Nav</nav>
+      <article>
+        <details>
+          <summary>Article</summary>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Dignissimos corporis aliquid quam culpa sapiente dolorum velit
+            pariatur accusantium deserunt ratione quidem aut, rem sint
+            repellendus, ipsa fugit error eius delectus nulla sed numquam?
+            Laborum impedit similique recusandae reiciendis rem eaque, culpa
+            mollitia, voluptate quidem nam suscipit beatae? Expedita iure
+            aperiam eum nulla quae quam ipsam commodi, iusto temporibus sequi
+            amet consequuntur obcaecati iste magnam aut repudiandae recusandae.
+            Illo quibusdam fugit sit maxime quidem adipisci nisi aliquam
+            recusandae temporibus. Ea ut laudantium temporibus eveniet tempore
+            quasi sequi, amet in unde, perspiciatis iste autem provident minima
+            qui ducimus sint eos. Ipsum, ipsam?
+          </p>
+        </details>
+      </article>
+      <footer>Footer</footer>
+    </div>
+  </body>
+</html>
