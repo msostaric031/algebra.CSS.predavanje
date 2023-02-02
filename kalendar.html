@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .calendar-wrapper {
+        max-width: 280px;
+        font: 100% system-ui;
+      }
+      .calendar {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+      }
+      .first-day {
+        grid-column-start: 3;
+      }
+      .day-name {
+        background: lightgray;
+      }
+      h1 {
+        text-align: center;
+      }
+      ol {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+      li {
+        padding: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calendar-wrapper">
+      <h1>Veljača 2023</h1>
+
+      <ol class="calendar">
+        <li class="day-name">Pon</li>
+        <li class="day-name">Uto</li>
+        <li class="day-name">Sri</li>
+        <li class="day-name">Čet</li>
+        <li class="day-name">Pet</li>
+        <li class="day-name">Sub</li>
+        <li class="day-name">Ned</li>
+        <li class="first-day">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+      </ol>
+    </div>
+  </body>
+</html>

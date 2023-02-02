@@ -1,0 +1,15 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+}
+
+.container > div {
+  background-color: orange;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+body {
+  margin: 2rem;
+  font: 12px system-ui;
+}
