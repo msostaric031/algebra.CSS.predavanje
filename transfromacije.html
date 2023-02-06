@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        line-height: 150px;
+      }
+      #container {
+        top: 25px;
+        left: 25px;
+        position: absolute;
+      }
+      .group {
+        display: inline-block;
+        width: 200px;
+        height: 150px;
+      }
+
+      .original,
+      .transformed {
+        width: 150px;
+        height: 150px;
+        border-radius: 20px;
+        color: white;
+        text-align: center;
+        background-color: black;
+        position: absolute;
+      }
+      .transformed {
+        background-color: tomato;
+        opacity: 0.8;
+      }
+      #transformed-1 {
+        transform: rotate(45deg);
+      }
+      #transformed-2 {
+        transform: rotate(1.2rad);
+      }
+      #transformed-3 {
+        transform: rotate(0.25turn);
+      }
+      #transformed-4 {
+        transform: skew(50deg, -15deg);
+      }
+      #transformed-5 {
+        transform: translate(100px, 20px) scale(0.8) rotate(30deg);
+      }
+      #transformed-6 {
+        transform: perspective(500px) rotateY(40deg);
+      }
+      #transformed-7 {
+        transform: perspective(500px) rotateY(60deg);
+      }
+      #transformed-8 {
+        transform: perspective(500px) rotateY(80deg);
+      }
+      #transformed-9 {
+        transform: rotate(45deg);
+        transform-origin: top left;
+      }
+      #transformed-10 {
+        transform: rotate(45deg);
+        transform-origin: 75px 150px;
+      }
+      #transformed-11:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+      #transformed-12:hover {
+        transition: transform 2s;
+        transform: rotate(360deg);
+      }
+      #transformed-13 {
+        animation: pulsiraj 1s infinite;
+        animation-direction: alternate;
+      }
+      @keyframes pulsiraj {
+        0% {
+          transform: scale(0.75);
+        }
+        100% {
+          transform: scale(1.5);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>rotate()</h1>
+      <div class="group">
+        <div class="original">original</div>
+        <div class="transformed" id="transformed-1">transformed</div>
+      </div>
+      <div class="group">
+        <div class="original">original</div>
+        <div class="transformed" id="transformed-2">transformed</div>
+      </div>
+      <div class="group">
+        <div class="original">original</div>
+        <div class="transformed" id="transformed-3">transformed</div>
+      </div>
+      <h1>skew()</h1>
+      <div class="group">
+        <div class="original">original</div>
+        <div class="transformed" id="transformed-4">transformed</div>
+      </div>
+      <h1>kombinacija</h1>
+      <div class="group">
+        <div class="original">original</div>
+        <div class="transformed" id="transformed-5">transformed</div>
+      </div>
+      <br />
+      <h1>perspective()</h1>
+      <div class="group">
+        <div class="original">original</div>
+        <div class="transformed" id="transformed-6">transformed</div>
+      </div>
+      <div class="group">
+        <div class="original">original</div>
+        <div class="transformed" id="transformed-7">transformed</div>
+      </div>
+      <div class="group">
+        <div class="original">original</div>
+        <div class="transformed" id="transformed-8">transformed</div>
+      </div>
+      <h1>transform-origin</h1>
+      <div class="group">
+        <div class="original">original</div>
+        <div class="transformed" id="transformed-9">transformed</div>
+      </div>
+      <div class="group">
+        <div class="original">original</div>
+        <div class="transformed" id="transformed-10">transformed</div>
+      </div>
+      <h1>transform animacija</h1>
+      <div class="group">
+        <div class="original">original</div>
+        <div class="transformed" id="transformed-11">animirani</div>
+      </div>
+      <div class="group">
+        <div class="original">original</div>
+        <div class="transformed" id="transformed-12">animirani</div>
+      </div>
+      <div class="group">
+        <div class="original">original</div>
+        <div class="transformed" id="transformed-13">pulsirajući</div>
+      </div>
+    </div>
+  </body>
+</html>
