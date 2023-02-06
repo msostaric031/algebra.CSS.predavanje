@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-row-gap: 20px;
+      }
+      .divs {
+        width: 150px;
+        height: 150px;
+        text-align: center;
+        line-height: 150px;
+
+        border-radius: 10px;
+        transition: all 0.5s ease-in-out;
+      }
+      .anim2,
+      .anim5,
+      .anim8,
+      .anim11 {
+        background-color: lightblue;
+        color: black;
+      }
+      .anim1,
+      .anim4,
+      .anim7,
+      .anim10 {
+        background-color: tomato;
+        color: white;
+      }
+      .anim3,
+      .anim6,
+      .anim9 {
+        background-color: wheat;
+      }
+      .divs:hover {
+        cursor: pointer;
+      }
+      .anim1:hover {
+        transform: translateX(20px);
+      }
+      .anim2:hover {
+        transform: translateY(-20px);
+      }
+      .anim3:hover {
+        transform: translate(-20px, 20px);
+      }
+      .anim4:hover {
+        transform: scaleX(-1);
+      }
+      .anim5:hover {
+        transform: scaleY(1.2);
+      }
+      .anim6:hover {
+        transform: scale(1.2, 0.5);
+      }
+      .anim7:hover {
+        transform: rotate(720deg);
+      }
+      .anim8:hover {
+        transform: skewX(20deg);
+      }
+      .anim9:hover {
+        transform: skewY(-20deg);
+      }
+      .anim10:hover {
+        transform: skew(-20deg, 20deg);
+      }
+      .anim11:hover {
+        transform: matrix(1.2, 0, 0.5, 1.2, 50, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="divs anim1">translateX</div>
+      <div class="divs anim2">translateY</div>
+      <div class="divs anim3">translate combination</div>
+      <div class="divs anim4">scaleX</div>
+      <div class="divs anim5">scaleY</div>
+      <div class="divs anim6">scale combination</div>
+      <div class="divs anim7">rotate</div>
+      <div class="divs anim8">skewX</div>
+      <div class="divs anim9">skewY</div>
+      <div class="divs anim10">skew combination</div>
+      <div class="divs anim11">matrix</div>
+    </div>
+  </body>
+</html>

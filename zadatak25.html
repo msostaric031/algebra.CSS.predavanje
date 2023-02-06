@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: rgb(20, 20, 20);
+        overflow: hidden;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 50% 0 0 0;
+        position: relative;
+      }
+      body::after {
+        content: "";
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 50%;
+        background: linear-gradient(
+          100deg,
+          rgba(20, 20, 20, 1) 40%,
+          rgba(20, 20, 20, 0) 100%
+        );
+      }
+      .wrapper {
+        display: flex;
+        height: 100%;
+        width: 60%;
+        margin: 0 auto;
+        perspective: 450px;
+      }
+      .scroll-text {
+        color: yellow;
+        font-size: 3vw;
+        line-height: 1.5em;
+        font-weight: bold;
+        text-align: center;
+        position: relative;
+        animation: scroll 60s linear forwards;
+      }
+      @keyframes scroll {
+        from {
+          top: 0;
+          transform: translateZ(0) rotateX(20deg);
+        }
+        to {
+          top: -7500px;
+          transform: translateZ(-2500px) rotateX(21deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="scroll-text">
+        <h1>STAR WARS</h1>
+        <h2>Scrolling Text Effect</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore
+          assumenda magni nulla numquam ducimus obcaecati, fugit repellat
+          voluptatibus aspernatur minus.
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore
+          assumenda magni nulla numquam ducimus obcaecati, fugit repellat
+          voluptatibus aspernatur minus.
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore
+          assumenda magni nulla numquam ducimus obcaecati, fugit repellat
+          voluptatibus aspernatur minus.
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore
+          assumenda magni nulla numquam ducimus obcaecati, fugit repellat
+          voluptatibus aspernatur minus.
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore
+          assumenda magni nulla numquam ducimus obcaecati, fugit repellat
+          voluptatibus aspernatur minus.
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore
+          assumenda magni nulla numquam ducimus obcaecati, fugit repellat
+          voluptatibus aspernatur minus.
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore
+          assumenda magni nulla numquam ducimus obcaecati, fugit repellat
+          voluptatibus aspernatur minus.
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore
+          assumenda magni nulla numquam ducimus obcaecati, fugit repellat
+          voluptatibus aspernatur minus.
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore
+          assumenda magni nulla numquam ducimus obcaecati, fugit repellat
+          voluptatibus aspernatur minus.
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore
+          assumenda magni nulla numquam ducimus obcaecati, fugit repellat
+          voluptatibus aspernatur minus.
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore
+          assumenda magni nulla numquam ducimus obcaecati, fugit repellat
+          voluptatibus aspernatur minus.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
